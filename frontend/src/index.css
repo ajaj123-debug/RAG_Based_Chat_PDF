@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  @apply antialiased;
+}
+
+.light body {
+  @apply bg-zinc-100 text-zinc-900;
+}
+
+.dark body {
+  @apply bg-zinc-950 text-zinc-100;
+}
+
+/* react-pdf canvas */
+.react-pdf__Page__canvas {
+  @apply mx-auto rounded-sm shadow-lg;
+}
