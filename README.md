@@ -131,7 +131,7 @@ Create `backend/.env` (this path is loaded explicitly by `rag_project/settings.p
 
 ```env
 # Required for chat and analyze
-GEMINI_API_KEY=your_key_here
+GEMINI_API_KEY=AIzasdkjfbjdshbfvITSFAKEOBVISOUSLY
 
 # Optional — default shown
 GEMINI_MODEL=gemini-2.5-flash
