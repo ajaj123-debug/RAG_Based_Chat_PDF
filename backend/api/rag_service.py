@@ -219,6 +219,9 @@ def chat_with_citations(document_id: str, user_message: str) -> dict[str, Any]:
 
 
 
+
+
+
 def summarize_document(document_id: str) -> dict[str, Any]:
     if not _gemini_api_key():
         raise RuntimeError(
