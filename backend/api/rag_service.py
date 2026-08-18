@@ -140,6 +140,8 @@ def _gemini_generate(
         raise RuntimeError(f"Gemini request failed: {e!s}") from e
     return _gemini_text_response(response)
 
+
+
 def _retrieve(document_id: str, query: str, k: int = 6) -> list[dict[str, Any]]:
     client = _get_chroma_client()
     name = _collection_name(document_id)
