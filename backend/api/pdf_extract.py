@@ -5,6 +5,8 @@ from pathlib import Path
 from pypdf import PdfReader
 
 #### functions for extracting text from PDF files, used by rag_service.py
+
+
 def extract_pages_text(pdf_path: str | Path) -> list[tuple[int, str]]:
     path = Path(pdf_path)
     reader = PdfReader(str(path))
